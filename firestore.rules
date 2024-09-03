@@ -1,0 +1,11 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // This rule allows anyone to read and write to the database until October 3, 2024
+    // After this date, only authenticated users will be able to access the data
+    match /{document=**} {
+      allow read, write: if request.time < timestamp.date(2024, 10, 3) || request.auth != null;
+    }
+  }
+}

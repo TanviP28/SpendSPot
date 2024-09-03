@@ -1,0 +1,36 @@
+$primary-color: #4bc0c0;
+$secondary-color: #ff6384;
+$font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+body {
+  font-family: $font-stack;
+  background-color: #f8f9fa;
+}
+
+.navbar {
+  margin-bottom: 20px;
+  background-color: $primary-color;
+  
+  .navbar-brand {
+    color: white;
+    
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+  h2 {
+    color: darken($primary-color, 20%);
+  }
+}
+
+footer {
+  background-color: #f8f9fa;
+  color: #666;
+  padding: 15px 0;
+}

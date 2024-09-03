@@ -1,0 +1,108 @@
+/* Center the authentication forms */
+body {
+    background: linear-gradient(to bottom, #5fb8c4, #a0d6a0); /* Gradient from light to pastel green */
+    margin: 0;
+    font-family: Arial, sans-serif; /* Make sure to include a font-family for consistency */
+  }
+  
+  /* Auth container style */
+  .auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 1rem;
+  }
+  
+  .auth-form {
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow for elevation */
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    position: relative; /* Optional: if you want to position additional elements */
+    top: -30px; /* Optional: Adjust to raise the container */
+  }
+  
+  .auth-form h2 {
+    color: #333333; /* Dark text color */
+  }
+  
+  .auth-form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #dcdcdc; /* Light border */
+    border-radius: 4px;
+  }
+  
+  .auth-button {
+    background-color: #a0d6a0; /* Pastel green */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    align-items: center;
+  }
+  
+  .auth-button:hover {
+    background-color: #8dcf8d; /* Slightly darker pastel green */
+  }
+  
+  .switch-button {
+    background-color: #333333; /* Black background */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+    align-items: center;
+  }
+  
+  .switch-button:hover {
+    background-color: #1a1a1a; /* Darker black */
+  }
+  
+  .error-message {
+    color: red;
+    margin-bottom: 1rem;
+  }
+  /* Button styling for switching between login and register */
+.switch-button {
+    background-color: #333333; /* Black background */
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .switch-button:hover {
+    background-color: #1a1a1a; /* Darker black */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
+  .switch-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #a0d6a0; /* Add a pastel green outline when focused */
+  }
+  
+  .switch-button:active {
+    background-color: #000000; /* Solid black when clicked */
+    transform: scale(0.98); /* Slightly shrink when clicked */
+  }
+  
